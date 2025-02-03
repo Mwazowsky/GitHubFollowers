@@ -9,6 +9,7 @@ workflows:
       groups:
         - Mwazowsky
       vars:
+        DEVELOPMENT_TEAM: $DEVELOPMENT_TEAM
         APPLE_KEY_ID: $APPLE_KEY_ID
         APPLE_ISSUER_ID: $APPLE_ISSUER_ID
         APPLE_PRIVATE_KEY: $APPLE_PRIVATE_KEY
@@ -27,28 +28,36 @@ workflows:
           source: true
       cancel_previous_builds: true
     scripts:
-      # - name: Install Dependencies
-      #   script: |
-      #     gem install cocoapods --user-install
-      #     cd ios
-      #     pod install
-      #     cd ..
+      - name: Verify Bundle ID
+          script: |
+            plutil -extract CFBundleIdentifier raw -o - UIkitZeroToHero/Info.plist
+            echo "Registered bundle IDs:"
+            xcrun altool --list-providers -u $APPLE_USERNAME -p $APPLE_APP_SPECIFIC_PASSWORD
 
       - name: Build IPA
-        script: |
-          set -exo pipefail
-          xcodebuild -project UIkitZeroToHero.xcodeproj \
-            -scheme "UIkitZeroToHero" \
-            -destination 'generic/platform=iOS' \
-            -allowProvisioningUpdates \
-            clean archive \
-            -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
-            CODE_SIGN_STYLE="Automatic"
+          script: |
+            set -exo pipefail
 
-          xcodebuild -exportArchive \
-            -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
-            -exportOptionsPlist ios/ExportOptions.plist \
-            -exportPath $CM_BUILD_DIR/ipa
+            # 1. Set development team (required for automatic signing)
+            DEVELOPMENT_TEAM="YOUR_TEAM_ID"  # Get from Apple Developer Portal
+
+            # 2. Archive with explicit team ID
+            xcodebuild -project UIkitZeroToHero.xcodeproj \
+              -scheme "UIkitZeroToHero" \
+              -destination 'generic/platform=iOS' \
+              -allowProvisioningUpdates \
+              clean archive \
+              -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
+              CODE_SIGN_STYLE="Automatic" \
+              DEVELOPMENT_TEAM="$DEVELOPMENT_TEAM" \
+              PROVISIONING_PROFILE_SPECIFIER="iOS Team Provisioning Profile: *" \
+              PRODUCT_BUNDLE_IDENTIFIER="calterras.com.UIkitZeroToHero"
+
+            # 3. Export IPA with proper options
+            xcodebuild -exportArchive \
+              -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
+              -exportOptionsPlist ExportOptions.plist \
+              -exportPath $CM_BUILD_DIR/ipa
 
     artifacts:
       - $CM_BUILD_DIR/ipa/*.ipa
