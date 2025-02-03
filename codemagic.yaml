@@ -5,12 +5,12 @@ workflows:
     max_build_duration: 60
     environment:
       groups:
-        - Mwazowsky  # Group containing your Apple credentials
+        - Mwazowsky
       vars:
         APPLE_KEY_ID: $APPLE_KEY_ID
         APPLE_ISSUER_ID: $APPLE_ISSUER_ID
         APPLE_PRIVATE_KEY: $APPLE_PRIVATE_KEY
-      xcode: latest  # Or specify a specific version like '15.0'
+      xcode: latest
     cache:
       cache_paths:
         - ~/Library/Caches/CocoaPods
@@ -20,36 +20,21 @@ workflows:
       events:
         - push
       branch_patterns:
-        - pattern: 'main'  # Trigger only on main branch
+        - pattern: 'main'
           include: true
           source: true
-      cancel_previous_builds: true  # Save build minutes
+      cancel_previous_builds: true
     scripts:
       - name: Install Dependencies
         script: |
-          # Install CocoaPods if needed
           gem install cocoapods --user-install
-          
-          # Install project pods
           cd ios
           pod install
           cd ..
 
-      - name: Generate Apple Credentials
-        script: |
-          # Create App Store Connect API key JSON
-          echo '{
-            "key_id": "'"$APPLE_KEY_ID"'",
-            "issuer_id": "'"$APPLE_ISSUER_ID"'",
-            "key": "'"$APPLE_PRIVATE_KEY"'"
-          }' > $CM_BUILD_DIR/app_store_connect.json
-
       - name: Build IPA
         script: |
           set -exo pipefail
-          
-          # Configure code signing (adjust to your setup)
-          # If using automatic signing:
           xcodebuild -project ios/YourProject.xcodeproj \
             -scheme "YourScheme" \
             -destination 'generic/platform=iOS' \
@@ -58,33 +43,22 @@ workflows:
             -archivePath $CM_BUILD_DIR/YourApp.xcarchive \
             CODE_SIGN_STYLE="Automatic"
 
-          # Export IPA
           xcodebuild -exportArchive \
             -archivePath $CM_BUILD_DIR/YourApp.xcarchive \
             -exportOptionsPlist ios/ExportOptions.plist \
             -exportPath $CM_BUILD_DIR/ipa
-
-      - name: Deploy with Fastlane
-        script: |
-          # If using Fastlane for TestFlight upload
-          cd ios
-          bundle install
-          bundle exec fastlane beta
 
     artifacts:
       - $CM_BUILD_DIR/ipa/*.ipa
 
     publishing:
       app_store_connect:
-        auth:
-          key: $CM_BUILD_DIR/app_store_connect.json
-        submit_to_testflight: true  # Automatically submit to TestFlight
+        api_key:
+          key_id: $APPLE_KEY_ID
+          issuer_id: $APPLE_ISSUER_ID
+          key: $APPLE_PRIVATE_KEY  # Directly use the secure variable
+        submit_to_testflight: true
 
       email:
         recipients:
           - saifulloh.fadli@gmail.com
-
-      scripts:
-        - name: Post-publish
-          script: |
-            echo "IPA built and deployed to TestFlight!"
