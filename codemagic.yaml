@@ -37,16 +37,16 @@ workflows:
       - name: Build IPA
         script: |
           set -exo pipefail
-          xcodebuild -project ios/YourProject.xcodeproj \
-            -scheme "YourScheme" \
+          xcodebuild -project ios/UIkitZeroToHero.xcodeproj \
+            -scheme "UIkitZeroToHero" \
             -destination 'generic/platform=iOS' \
             -allowProvisioningUpdates \
             clean archive \
-            -archivePath $CM_BUILD_DIR/YourApp.xcarchive \
+            -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
             CODE_SIGN_STYLE="Automatic"
 
           xcodebuild -exportArchive \
-            -archivePath $CM_BUILD_DIR/YourApp.xcarchive \
+            -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
             -exportOptionsPlist ios/ExportOptions.plist \
             -exportPath $CM_BUILD_DIR/ipa
 
