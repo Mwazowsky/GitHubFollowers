@@ -30,7 +30,7 @@ workflows:
     scripts:
       - name: Verify Bundle ID
         script: |
-          plutil -extract CFBundleIdentifier raw -o - UIkitZeroToHero/Info.plist
+          plutil -extract CFBundleIdentifier raw -o - UIkitZeroToHero/Resources/Info.plist
           echo "Bundle ID verification complete"
 
       - name: Build IPA
@@ -44,7 +44,7 @@ workflows:
             -allowProvisioningUpdates \
             clean archive \
             -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
-            CODE_SIGN_STYLE="Automatic" \
+            CODE_SIGN_STYLE="Manual" \
             DEVELOPMENT_TEAM="$DEVELOPMENT_TEAM" \
             PRODUCT_BUNDLE_IDENTIFIER="calterras.com.UIkitZeroToHero"
 
