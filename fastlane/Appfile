@@ -1,0 +1,8 @@
+app_identifier("calterras.com.UIkitZeroToHero") # The bundle identifier of your app
+apple_id("saifulloh.fadli@gmail.com") # Your Apple Developer Portal username
+
+itc_team_id("127050737") # App Store Connect Team ID
+team_id("397FG78S7G") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
