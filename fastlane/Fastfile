@@ -18,8 +18,23 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    api_key = app_store_connect_api_key(
+      key_id: "3R76KS73QY",
+      issuer_id: "e4d131c6-44fb-40f5-8bf0-aeacc347897d",
+      key_filepath: "./fastlane/AuthKey_3R76KS73QY.p8",
+      duration: 1200,
+      in_house: false # optional but may be required if using match/sigh
+    )
     increment_build_number(xcodeproj: "UIkitZeroToHero.xcodeproj")
-    build_app(scheme: "UIkitZeroToHero")
-    upload_to_testflight
+    build_app(
+      scheme: "UIkitZeroToHero",
+      export_options: {
+        provisioningProfiles: {
+          "calterras.com.UIkitZeroToHero" => "OctoPals-Distribution-Provisioning-Profiles"
+          }
+        }
+    )
+
+    pilot(api_key: api_key)
   end
 end
