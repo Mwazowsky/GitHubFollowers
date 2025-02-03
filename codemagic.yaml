@@ -7,7 +7,7 @@ workflows:
     max_build_duration: 60
     environment:
       groups:
-        - mwazowsky
+        - Mwazowsky
       vars:
         APPLE_KEY_ID: $APPLE_KEY_ID
         APPLE_ISSUER_ID: $APPLE_ISSUER_ID
