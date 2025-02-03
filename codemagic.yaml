@@ -50,7 +50,7 @@ workflows:
 
           xcodebuild -exportArchive \
             -archivePath $CM_BUILD_DIR/UIkitZeroToHero.xcarchive \
-            -exportOptionsPlist .Resources/ExportOptions.plist \
+            -exportOptionsPlist ./Resources/ExportOptions.plist \
             -exportPath $CM_BUILD_DIR/ipa
 
     artifacts:
