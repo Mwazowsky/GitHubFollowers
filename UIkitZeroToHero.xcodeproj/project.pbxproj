@@ -40,14 +40,20 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				UIComponents/Atoms/FollowersButton.swift,
+				Controllers/FollowerListVC.swift,
+				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				Utils/Constants.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				UIComponents/Atoms/FollowersButton.swift,
+				Controllers/FollowerListVC.swift,
+				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				Utils/Constants.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
