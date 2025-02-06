@@ -13,10 +13,13 @@ class SearchVC: UIViewController {
     
     let usernameTextField: ZTHBaseTextField = ZTHBaseTextField()
     let actionButton: ZTHFollowerButton     = ZTHFollowerButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let validationLabel: ZTHValidationText  = ZTHValidationText()
+    
+    var isUsernameEnterd: Bool { return !usernameTextField.text!.isEmpty }
     
     private var tapGesture: UITapGestureRecognizer!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,13 +52,46 @@ class SearchVC: UIViewController {
     
     
     @objc func pushFollowerListVC() {
-        let followerListVC      = FollowerListVC()
-        followerListVC.username = usernameTextField.text ?? ""
-        followerListVC.title    = usernameTextField.text ?? ""
+        guard let githubUsernameText = usernameTextField.text, !githubUsernameText.isEmpty else {
+            print("No Username entered")
+            return
+        }
         
-        navigationController?.pushViewController(followerListVC, animated: true)
+        if githubUsernameText.isValidGithubUsername {
+            let followerListVC = FollowerListVC()
+            followerListVC.username = githubUsernameText
+            followerListVC.title = githubUsernameText
+            navigationController?.pushViewController(followerListVC, animated: true)
+        } else {
+            print("Invalid Username format")
+        }
     }
-
+    
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        validateCurrentInput()
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        validateCurrentInput()
+    }
+    
+    
+    private func validateCurrentInput() {
+        let text = usernameTextField.text ?? ""
+        
+        if text.isEmpty {
+            actionButton.isEnabled = false
+            validationLabel.setValidationStatus(.empty)
+        } else if !text.isValidGithubUsername {
+            validationLabel.setValidationStatus(.invalid(["Invalid username format", "Use only alphanumeric characters and hyphens"]))
+        } else {
+            actionButton.isEnabled = true
+            validationLabel.setValidationStatus(.valid)
+        }
+    }
+    
     
     private func configureLogoImageView() {
         view.addSubview(logoImageView)
@@ -73,15 +109,23 @@ class SearchVC: UIViewController {
     
     private func configureTextField() {
         view.addSubview(usernameTextField)
+        view.addSubview(validationLabel)
+        
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
+        validationLabel.translatesAutoresizingMaskIntoConstraints = false
         
         usernameTextField.delegate = self
-
+        
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
             usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            usernameTextField.heightAnchor.constraint(equalToConstant: 45)
+            usernameTextField.heightAnchor.constraint(equalToConstant: 45),
+            
+            // Validation label constraints
+            validationLabel.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 8),
+            validationLabel.leadingAnchor.constraint(equalTo: usernameTextField.leadingAnchor),
+            validationLabel.trailingAnchor.constraint(equalTo: usernameTextField.trailingAnchor)
         ])
     }
     

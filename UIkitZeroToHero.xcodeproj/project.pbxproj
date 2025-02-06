@@ -41,9 +41,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Controllers/FollowerListVC.swift,
+				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				Utils/Constants.swift,
+				Utils/Regex.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
@@ -51,9 +54,12 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Controllers/FollowerListVC.swift,
+				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				Utils/Constants.swift,
+				Utils/Regex.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
