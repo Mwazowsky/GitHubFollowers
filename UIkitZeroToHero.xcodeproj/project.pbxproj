@@ -42,10 +42,14 @@
 			membershipExceptions = (
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Controllers/FollowerListVC.swift,
+				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
+				Utils/Regex.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
@@ -54,10 +58,14 @@
 			membershipExceptions = (
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Controllers/FollowerListVC.swift,
+				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
+				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
+				Utils/Regex.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
