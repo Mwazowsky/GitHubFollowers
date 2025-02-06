@@ -40,26 +40,62 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				App/AppAppearance.swift,
+				App/AppConfiguration.swift,
+				App/AppFlowCoordinator.swift,
+				App/DIContainer/AppDIContainer.swift,
+				App/DIContainer/UsersSceneDIContainer.swift,
 				Controllers/FollowerListVC.swift,
-				"Extensions/String/String+Extension.swift",
+				Domain/Entities/User.swift,
+				Domain/Entities/UserQuery.swift,
+				Domain/Interfaces/Repositories/UsersQueriesRepository.swift,
+				Domain/Interfaces/Repositories/UsersRepository.swift,
+				Domain/UseCases/SearchUsersUseCase.swift,
+				Infrastructure/Network/DataTransferService.swift,
+				Infrastructure/Network/Endpoint.swift,
+				Infrastructure/Network/NetworkConfig.swift,
+				Infrastructure/Network/NetworkService.swift,
+				Presentation/UserScene/Flows/UserSearchFlowCoordinator.swift,
+				Presentation/UserScene/UsersList/ViewModel/UsersListItemViewModel.swift,
+				Presentation/UserScene/UsersList/ViewModel/UsersListViewModel.swift,
+				Presentation/Utils/Constants.swift,
+				"Presentation/Utils/Extensions/String/String+Extension.swift",
+				Presentation/Utils/Observable.swift,
+				Presentation/Utils/Regex.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
-				Utils/Constants.swift,
-				Utils/Regex.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				App/AppAppearance.swift,
+				App/AppConfiguration.swift,
+				App/AppFlowCoordinator.swift,
+				App/DIContainer/AppDIContainer.swift,
+				App/DIContainer/UsersSceneDIContainer.swift,
 				Controllers/FollowerListVC.swift,
-				"Extensions/String/String+Extension.swift",
+				Domain/Entities/User.swift,
+				Domain/Entities/UserQuery.swift,
+				Domain/Interfaces/Repositories/UsersQueriesRepository.swift,
+				Domain/Interfaces/Repositories/UsersRepository.swift,
+				Domain/UseCases/SearchUsersUseCase.swift,
+				Infrastructure/Network/DataTransferService.swift,
+				Infrastructure/Network/Endpoint.swift,
+				Infrastructure/Network/NetworkConfig.swift,
+				Infrastructure/Network/NetworkService.swift,
+				Presentation/UserScene/Flows/UserSearchFlowCoordinator.swift,
+				Presentation/UserScene/UsersList/ViewModel/UsersListItemViewModel.swift,
+				Presentation/UserScene/UsersList/ViewModel/UsersListViewModel.swift,
+				Presentation/Utils/Constants.swift,
+				"Presentation/Utils/Extensions/String/String+Extension.swift",
+				Presentation/Utils/Observable.swift,
+				Presentation/Utils/Regex.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
-				Utils/Constants.swift,
-				Utils/Regex.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
