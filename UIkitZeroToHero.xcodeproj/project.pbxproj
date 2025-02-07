@@ -40,62 +40,22 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				App/AppAppearance.swift,
-				App/AppConfiguration.swift,
-				App/AppFlowCoordinator.swift,
-				App/DIContainer/AppDIContainer.swift,
-				App/DIContainer/UsersSceneDIContainer.swift,
-				Controllers/FollowerListVC.swift,
-				Domain/Entities/User.swift,
-				Domain/Entities/UserQuery.swift,
-				Domain/Interfaces/Repositories/UsersQueriesRepository.swift,
-				Domain/Interfaces/Repositories/UsersRepository.swift,
-				Domain/UseCases/SearchUsersUseCase.swift,
-				Infrastructure/Network/DataTransferService.swift,
-				Infrastructure/Network/Endpoint.swift,
-				Infrastructure/Network/NetworkConfig.swift,
-				Infrastructure/Network/NetworkService.swift,
-				Presentation/UserScene/Flows/UserSearchFlowCoordinator.swift,
-				Presentation/UserScene/UsersList/ViewModel/UsersListItemViewModel.swift,
-				Presentation/UserScene/UsersList/ViewModel/UsersListViewModel.swift,
-				Presentation/Utils/Constants.swift,
-				"Presentation/Utils/Extensions/String/String+Extension.swift",
-				Presentation/Utils/Observable.swift,
-				Presentation/Utils/Regex.swift,
+				Modules/FavoriteList/Models/Favorite.swift,
+				Modules/FollowerList/FollowerListVC.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
-				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				App/AppAppearance.swift,
-				App/AppConfiguration.swift,
-				App/AppFlowCoordinator.swift,
-				App/DIContainer/AppDIContainer.swift,
-				App/DIContainer/UsersSceneDIContainer.swift,
-				Controllers/FollowerListVC.swift,
-				Domain/Entities/User.swift,
-				Domain/Entities/UserQuery.swift,
-				Domain/Interfaces/Repositories/UsersQueriesRepository.swift,
-				Domain/Interfaces/Repositories/UsersRepository.swift,
-				Domain/UseCases/SearchUsersUseCase.swift,
-				Infrastructure/Network/DataTransferService.swift,
-				Infrastructure/Network/Endpoint.swift,
-				Infrastructure/Network/NetworkConfig.swift,
-				Infrastructure/Network/NetworkService.swift,
-				Presentation/UserScene/Flows/UserSearchFlowCoordinator.swift,
-				Presentation/UserScene/UsersList/ViewModel/UsersListItemViewModel.swift,
-				Presentation/UserScene/UsersList/ViewModel/UsersListViewModel.swift,
-				Presentation/Utils/Constants.swift,
-				"Presentation/Utils/Extensions/String/String+Extension.swift",
-				Presentation/Utils/Observable.swift,
-				Presentation/Utils/Regex.swift,
+				Modules/FavoriteList/Models/Favorite.swift,
+				Modules/FollowerList/FollowerListVC.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
-				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
@@ -354,7 +314,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = W6988R58JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -388,7 +348,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = W6988R58JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
