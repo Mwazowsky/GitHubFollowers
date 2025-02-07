@@ -8,7 +8,6 @@
 import UIKit
 
 class SearchVC: UIViewController {
-    
     let logoImageView: UIImageView = UIImageView()
     
     let usernameTextField: ZTHBaseTextField = ZTHBaseTextField()

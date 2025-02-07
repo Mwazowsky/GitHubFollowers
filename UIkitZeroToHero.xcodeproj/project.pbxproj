@@ -40,9 +40,12 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Controllers/FollowerListVC.swift,
+				Modules/FavoriteList/Models/Favorite.swift,
+				Modules/FollowerList/FollowerListVC.swift,
+				Modules/SearchUser/Test.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
@@ -50,9 +53,12 @@
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Controllers/FollowerListVC.swift,
+				Modules/FavoriteList/Models/Favorite.swift,
+				Modules/FollowerList/FollowerListVC.swift,
+				Modules/SearchUser/Test.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
+				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
@@ -312,7 +318,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = W6988R58JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -346,7 +352,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = W6988R58JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
