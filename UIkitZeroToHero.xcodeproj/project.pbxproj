@@ -40,8 +40,16 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Data/PersistentStorage/CoreDataStorage/CoreDataStorage.swift,
+				Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/CoreDataUsersQueriesStorage.swift,
+				"Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/EntityMapping/UserQueryEntity+Mapping.swift",
+				Data/PersistentStorage/UsersQueriesStorage/UsersQueriesStorage.swift,
+				Domain/UseCases/FetchRecentUserQueriesUseCase.swift,
+				Domain/UseCases/Protocol/UseCase.swift,
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Presentation/UserScene/UsersList/View/UsersListView.swift,
+				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
@@ -51,8 +59,16 @@
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Data/PersistentStorage/CoreDataStorage/CoreDataStorage.swift,
+				Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/CoreDataUsersQueriesStorage.swift,
+				"Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/EntityMapping/UserQueryEntity+Mapping.swift",
+				Data/PersistentStorage/UsersQueriesStorage/UsersQueriesStorage.swift,
+				Domain/UseCases/FetchRecentUserQueriesUseCase.swift,
+				Domain/UseCases/Protocol/UseCase.swift,
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Presentation/UserScene/UsersList/View/UsersListView.swift,
+				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,

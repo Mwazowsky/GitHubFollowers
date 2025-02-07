@@ -1,0 +1,117 @@
+//
+//  UsersResponseStorage.swift
+//  UIkitZeroToHero
+//
+//  Created by MacBook Air MII  on 07/02/25.
+//
+
+import Foundation
+import CoreData
+
+final class CoreDataUsersResponseStorage {
+    private let coreDataStorage: CoreDataStorage
+    
+    init(coreDataStorage: CoreDataStorage = CoreDataStorage.shared) {
+        self.coreDataStorage = coreDataStorage
+    }
+    
+    // MARK: - Private
+    private func fetchRequest(
+        for requestDto: UsersRequestDTO
+    ) -> NSFetchRequest<UsersRequestEntity> {
+        let request: NSFetchRequest = UsersRequestEntity.fetchRequest()
+        request.predicate = NSPredicate(
+            format: "%K = %@ AND %K = %d",
+            #keyPath(UsersRequestEntity.query), requestDto.query,
+            #keyPath(UsersRequestEntity.page), requestDto.page
+        )
+        
+        return request
+    }
+    
+    private func deleteResponse(
+        for requestDto: UsersRequestDTO,
+        in context: NSManagedObjectContext
+    ) {
+        let request = fetchRequest(for: requestDto)
+        
+        do {
+            if let result = try context.fetch(request).first {
+                context.delete(result)
+            }
+        } catch {
+            print(error)
+        }
+    }
+}
+
+
+extension CoreDataUsersResponseStorage: UsersResponseStorage {
+
+    func getResponse(
+        for requestDto: UsersRequestDTO,
+        completion: @escaping (Result<UsersResponseDTO?, Error>) -> Void
+    ) {
+        coreDataStorage.performBackgroundTask { context in
+            do {
+                let fetchRequest = self.fetchRequest(for: requestDto)
+                let requestEntity = try context.fetch(fetchRequest).first
+
+                completion(.success(requestEntity?.response?.toDTO()))
+            } catch {
+                completion(.failure(CoreDataStorageError.readError(error)))
+            }
+        }
+    }
+
+    func save(
+        response responseDto: UsersResponseDTO,
+        for requestDto: UsersRequestDTO
+    ) {
+        coreDataStorage.performBackgroundTask { context in
+            do {
+                self.deleteResponse(for: requestDto, in: context)
+
+                let requestEntity = requestDto.toEntity(in: context)
+                requestEntity.response = responseDto.toEntity(in: context)
+
+                try context.save()
+            } catch {
+                // TODO: - Log to Crashlytics
+                debugPrint("CoreDataMoviesResponseStorage Unresolved error \(error), \((error as NSError).userInfo)")
+            }
+        }
+    }
+}
+
+
+extension UsersResponseEntity {
+    func toDTO() -> UsersResponseDTO {
+        return .init(
+            page: Int(bitPattern: id),
+            totalPages: name,
+            users: email
+        )
+    }
+}
+
+extension UsersRequestDTO {
+    func toEntity(in context: NSManagedObjectContext) -> UsersRequestEntity {
+        let entity: UsersRequestEntity = .init(context: context)
+        entity.query = query
+        entity.page = Int32(page)
+        return entity
+    }
+}
+
+extension UsersResponseDTO {
+    func toEntity(in context: NSManagedObjectContext) -> UsersResponseEntity {
+        let entity: UsersResponseEntity = .init(context: context)
+        entity.page = Int32(page)
+        entity.totalPages = Int32(totalPages)
+        users.forEach {
+            entity.add($0.toEntity(in: context))
+        }
+        return entity
+    }
+}
