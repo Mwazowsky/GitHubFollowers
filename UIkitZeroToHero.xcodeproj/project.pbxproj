@@ -42,7 +42,6 @@
 			membershipExceptions = (
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
-				Modules/SearchUser/Test.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
@@ -55,7 +54,6 @@
 			membershipExceptions = (
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
-				Modules/SearchUser/Test.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
