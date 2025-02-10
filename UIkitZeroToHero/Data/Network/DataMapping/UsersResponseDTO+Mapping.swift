@@ -26,11 +26,13 @@ extension UsersResponseDTO {
             case id
             case email
             case name
+            case profileImagePath = "profile_image_path"
         }
         
         let id: Int
         let email: String?
         let name: String?
+        let profileImagePath: String?
     }
 }
 
@@ -49,7 +51,8 @@ extension UsersResponseDTO.UserDTO {
         return .init(
             id: User.Identifier(id),
             name: name ?? "",
-            email: email ?? ""
+            email: email ?? "",
+            profileImagePath: profileImagePath
         )
     }
 }

@@ -83,37 +83,3 @@ extension CoreDataUsersResponseStorage: UsersResponseStorage {
         }
     }
 }
-
-
-extension UsersResponseEntity {
-    func toDTO() -> UsersResponseDTO {
-        return .init(
-            page: Int(page),
-            totalPages: Int(totalPages),
-            users: users?.allObjects.map { ($0 as!
-                                            UsersResponseEntity).toDTO()
-            } ?? []
-        )
-    }
-}
-
-extension UsersRequestDTO {
-    func toEntity(in context: NSManagedObjectContext) -> UsersRequestEntity {
-        let entity: UsersRequestEntity = .init(context: context)
-        entity.query = query
-        entity.page = Int32(page)
-        return entity
-    }
-}
-
-extension UsersResponseDTO {
-    func toEntity(in context: NSManagedObjectContext) -> UsersResponseEntity {
-        let entity: UsersResponseEntity = .init(context: context)
-        entity.page = Int32(page)
-        entity.totalPages = Int32(totalPages)
-        users.forEach {
-            entity.add($0.toEntity(in: context))
-        }
-        return entity
-    }
-}

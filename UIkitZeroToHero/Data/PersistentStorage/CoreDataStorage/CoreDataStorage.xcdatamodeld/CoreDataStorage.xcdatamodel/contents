@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23507" systemVersion="24A348" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="UserQueryEntity" representedClassName="UserQueryEntity" syncable="YES" codeGenerationType="class">
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="query" optional="YES" attributeType="String"/>
@@ -8,17 +8,17 @@
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="usersResponse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsersResponseEntity" inverseName="users" inverseEntity="UsersResponseEntity"/>
+        <relationship name="usersResponse" maxCount="1" deletionRule="Nullify" destinationEntity="UsersResponseEntity" inverseName="users" inverseEntity="UsersResponseEntity"/>
     </entity>
     <entity name="UsersRequestEntity" representedClassName="UsersRequestEntity" syncable="YES" codeGenerationType="class">
         <attribute name="page" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="query" optional="YES" attributeType="String"/>
-        <relationship name="response" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsersResponseEntity" inverseName="request" inverseEntity="UsersResponseEntity"/>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UsersResponseEntity" inverseName="request" inverseEntity="UsersResponseEntity"/>
     </entity>
     <entity name="UsersResponseEntity" representedClassName="UsersResponseEntity" syncable="YES" codeGenerationType="class">
         <attribute name="page" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="totalPages" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="request" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsersRequestEntity" inverseName="response" inverseEntity="UsersRequestEntity"/>
-        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserResponseEntity" inverseName="usersResponse" inverseEntity="UserResponseEntity"/>
+        <relationship name="request" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UsersRequestEntity" inverseName="response" inverseEntity="UsersRequestEntity"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserResponseEntity" inverseName="usersResponse" inverseEntity="UserResponseEntity"/>
     </entity>
 </model>

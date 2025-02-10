@@ -20,11 +20,11 @@ class UsersListViewController: UIViewController {
     // MARK: - LifeCycle
     static func create(
         with viewModel: UsersListViewModel,
-        profileImageRepository: ProfileImagesRepository?
+        profilesImageRepository: ProfileImagesRepository?
     ) -> UsersListViewController {
         let view = UsersListViewController()
         view.viewModel = viewModel
-        view.profileImagesRepository = profileImageRepository
+        view.profileImagesRepository = profilesImageRepository
         
         return view
     }

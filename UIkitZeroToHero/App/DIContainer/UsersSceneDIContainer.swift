@@ -2,18 +2,6 @@ import UIKit
 import SwiftUI
 
 final class UsersSceneDIContainer: UsersSearchFlowCoordinatorDependencies {
-    func makeUserssListViewController(actions: UsersListViewModelActions) -> UsersListViewController {
-        <#code#>
-    }
-    
-    func makeUsersDetailsViewController(user: User) -> UIViewController {
-        <#code#>
-    }
-    
-    func makeUsersQueriesSuggestionsListViewController(didSelect: @escaping UsersQueryListViewModelDidSelectAction) -> UIViewController {
-        <#code#>
-    }
-    
     struct Dependencies {
         let apiDataTransferService: DataTransferService
         let imageDataTransferService: DataTransferService
@@ -66,11 +54,11 @@ final class UsersSceneDIContainer: UsersSearchFlowCoordinatorDependencies {
         )
     }
     
-    // MARK: - Movies List
+    // MARK: - Users List
     func makeUsersListViewController(actions: UsersListViewModelActions) -> UsersListViewController {
         UsersListViewController.create(
             with: makeUsersListViewModel(actions: actions),
-            profileImagesRepository: makeProfileImagesRepository()
+            profilesImageRepository: makeProfileImagesRepository()
         )
     }
     
@@ -79,5 +67,29 @@ final class UsersSceneDIContainer: UsersSearchFlowCoordinatorDependencies {
             searchUsersUseCase: makeSearchUsersUseCase(),
             actions: actions
         )
+    }
+    
+    // MARK: - Users Details
+//    func makeUsersDetailsViewController(user: User) -> UIViewController {
+//        UserDetailsViewController.create(
+//            with: makeMoviesDetailsViewController(user: user)
+//        )
+//    }
+//    
+//    func makeUsersDetailsViewModel(user: User) -> UserDetailsViewModel {
+//        
+//    }
+    
+    
+    func makeUserssListViewController(actions: UsersListViewModelActions) -> UsersListViewController {
+        <#code#>
+    }
+    
+    func makeUsersDetailsViewController(user: User) -> UIViewController {
+        <#code#>
+    }
+    
+    func makeUsersQueriesSuggestionsListViewController(didSelect: @escaping UsersQueryListViewModelDidSelectAction) -> UIViewController {
+        <#code#>
     }
 }
