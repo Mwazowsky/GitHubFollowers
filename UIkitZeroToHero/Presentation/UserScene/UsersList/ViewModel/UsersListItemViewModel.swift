@@ -12,12 +12,14 @@ import Foundation
 struct UsersListItemViewModel: Equatable {
     let name: String
     let email: String
+    let profileImagePath: String?
 }
 
 extension UsersListItemViewModel {
     init (user: User) {
         self.name = user.name
         self.email = user.email
+        self.profileImagePath = user.profileImagePath
     }
 }
 

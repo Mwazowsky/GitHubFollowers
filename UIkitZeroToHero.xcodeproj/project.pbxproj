@@ -48,8 +48,12 @@
 				Domain/UseCases/Protocol/UseCase.swift,
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Presentation/UserScene/UsersList/View/UsersListTableView/Cell/UsersListItemCell.swift,
+				Presentation/UserScene/UsersList/View/UsersListTableView/UsersListTableViewController.swift,
 				Presentation/UserScene/UsersList/View/UsersListView.swift,
 				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
+				"Presentation/Utils/Extensions/UIImageView/UIImageView+ImageSizeAfterAspectFit.swift",
+				"Presentation/Utils/Extensions/UIViewController/UIViewController+ActivityIndicator.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
@@ -67,8 +71,12 @@
 				Domain/UseCases/Protocol/UseCase.swift,
 				Modules/FavoriteList/Models/Favorite.swift,
 				Modules/FollowerList/FollowerListVC.swift,
+				Presentation/UserScene/UsersList/View/UsersListTableView/Cell/UsersListItemCell.swift,
+				Presentation/UserScene/UsersList/View/UsersListTableView/UsersListTableViewController.swift,
 				Presentation/UserScene/UsersList/View/UsersListView.swift,
 				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
+				"Presentation/Utils/Extensions/UIImageView/UIImageView+ImageSizeAfterAspectFit.swift",
+				"Presentation/Utils/Extensions/UIViewController/UIViewController+ActivityIndicator.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
@@ -330,7 +338,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = W6988R58JS;
+				DEVELOPMENT_TEAM = 397FG78S7G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -364,7 +372,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = W6988R58JS;
+				DEVELOPMENT_TEAM = 397FG78S7G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";

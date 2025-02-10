@@ -13,14 +13,14 @@ final class DefaultProfileImagesRepository {
     
     init(
         dataTransferService: DataTransferService,
-        backgroundQueue: DataTransferDispatchQueue
+        backgroundQueue: DataTransferDispatchQueue = DispatchQueue.global(qos: .userInitiated)
     ) {
         self.dataTransferService = dataTransferService
         self.backgroundQueue = backgroundQueue
     }
 }
 
-extension DefaultProfileImagesRepository: ProfileImageRepository {
+extension DefaultProfileImagesRepository: ProfileImagesRepository {
     func fetchImage(
         with imagePath: String,
         width: Int,

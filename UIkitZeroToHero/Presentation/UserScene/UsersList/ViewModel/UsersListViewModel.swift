@@ -62,24 +62,13 @@ final class DefaultUsersListViewModel: UsersListViewModel {
     
     // MARK: Init
     init(
-        items: Observable<[UsersListItemViewModel]>,
-        loading: Observable<UsersListViewModelLoading?>,
-        query: Observable<String>,
-        error: Observable<String>,
-        isEmpty: Bool,
-        screenTitle: String,
-        emptyDataTitle: String,
-        errorTitle: String,
-        searchBarPlaceholder: String
+        searchUsersUseCase: SearchUsersUseCase,
+        actions: UsersListViewModelActions? = nil,
+        mainQueue: DispatchQueueType = DispatchQueue.main
     ) {
-        self.items = items
-        self.loading = loading
-        self.query = query
-        self.error = error
-        self.screenTitle = screenTitle
-        self.emptyDataTitle = emptyDataTitle
-        self.errorTitle = errorTitle
-        self.searchBarPlaceholder = searchBarPlaceholder
+        self.searchUsersUseCase = searchUsersUseCase
+        self.actions = actions
+        self.mainQueue = mainQueue
     }
     
     

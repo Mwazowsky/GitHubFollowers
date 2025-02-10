@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ProfileImageRepository {
+protocol ProfileImagesRepository {
     func fetchImage(
         with imagePath: String,
         width: Int,

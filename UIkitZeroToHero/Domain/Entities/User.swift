@@ -13,6 +13,7 @@ struct User: Equatable, Identifiable {
     var id: Identifier
     var name: String
     var email: String
+    let profileImagePath: String?
 }
 
 
