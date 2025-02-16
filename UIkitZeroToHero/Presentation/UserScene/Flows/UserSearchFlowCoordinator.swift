@@ -20,19 +20,19 @@ protocol UsersSearchFlowCoordinatorDependencies  {
 
 
 final class UsersSearchFlowCoordinator {
-    private weak var navigatioController: UINavigationController?
+    private weak var navigationController: UINavigationController?
     private let dependencies: UsersSearchFlowCoordinatorDependencies
     
     private weak var usersListVC: UsersListViewController?
     private weak var usersQueriesSuggestionsVC: UIViewController?
     
     init(
-        navigatioController: UINavigationController? = nil,
+        navigationController: UINavigationController? = nil,
         dependencies: UsersSearchFlowCoordinatorDependencies,
         usersListVC: UsersListViewController? = nil,
         usersQueriesSuggestionsVC: UIViewController? = nil
     ) {
-        self.navigatioController = navigatioController
+        self.navigationController = navigationController
         self.dependencies = dependencies
         self.usersListVC = usersListVC
         self.usersQueriesSuggestionsVC = usersQueriesSuggestionsVC
@@ -48,14 +48,14 @@ final class UsersSearchFlowCoordinator {
         
         let vc = dependencies.makeUserssListViewController(actions: actions)
         
-        navigatioController?.pushViewController(vc, animated: false)
+        navigationController?.pushViewController(vc, animated: false)
         usersListVC = vc
     }
     
     
     private func showUserDetails(user: User) {
         let vc = dependencies.makeUsersDetailsViewController(user: user)
-        navigatioController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     

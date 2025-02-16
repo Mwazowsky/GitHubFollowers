@@ -58,7 +58,7 @@ final class UsersSceneDIContainer: UsersSearchFlowCoordinatorDependencies {
     func makeUsersListViewController(actions: UsersListViewModelActions) -> UsersListViewController {
         UsersListViewController.create(
             with: makeUsersListViewModel(actions: actions),
-            profilesImageRepository: makeProfileImagesRepository()
+            profileImageRepository: makeProfileImagesRepository()
         )
     }
     
@@ -69,27 +69,42 @@ final class UsersSceneDIContainer: UsersSearchFlowCoordinatorDependencies {
         )
     }
     
-    // MARK: - Users Details
-//    func makeUsersDetailsViewController(user: User) -> UIViewController {
-//        UserDetailsViewController.create(
-//            with: makeMoviesDetailsViewController(user: user)
-//        )
-//    }
-//    
-//    func makeUsersDetailsViewModel(user: User) -> UserDetailsViewModel {
-//        
-//    }
-    
-    
-    func makeUserssListViewController(actions: UsersListViewModelActions) -> UsersListViewController {
-        <#code#>
-    }
-    
-    func makeUsersDetailsViewController(user: User) -> UIViewController {
-        <#code#>
-    }
-    
+    // MARK: - Users Queries Suggestions List
     func makeUsersQueriesSuggestionsListViewController(didSelect: @escaping UsersQueryListViewModelDidSelectAction) -> UIViewController {
-        <#code#>
+        if #available (iOS 13.0, *) {   // Swift UI
+            let view = UsersQueryListView(
+                viewModelWrapper: makeUsersQueryListViewModelWrapper(didSelect: didSelect)
+            )
+            return UIHostingController(rootView: view)
+        } else {                        // UIKit
+            return UsersQueriesTableViewController.create(
+                with: makeUsersQueryListViewModel(didSelect: didSelect)
+            )
+        }
+    }
+    
+    func makeUsersQueryListViewModel(didSelect: @escaping UsersQueryListViewModelDidSelectAction) -> UsersQueryListViewModel {
+        DefaultUsersQueryListViewModel(
+            numberOfQueriesToShow: 10,
+            fetchRecentUserQueriesUseCaseFactory: makeFetchRecentUserQueriesUseCase,
+            didSelect: didSelect
+        )
+    }
+    
+    @available(iOS 13.0, *)
+    func makeUsersQueryListViewModelWrapper(
+        didSelect: @escaping UsersQueryListViewModelDidSelectAction
+    ) -> UsersQueryListViewModelWrapper {
+        UsersQueryListViewModelWrapper(
+            viewModel: makeUsersQueryListViewModel(didSelect: didSelect)
+        )
+    }
+    
+    // MARK: - Flow Cooordinator
+    func makeUsersSearchFlowCoordinator(navigationController: UINavigationController) -> UsersSearchFlowCoordinator {
+        UsersSearchFlowCoordinator(
+            navigationController: navigationController,
+            dependencies: self
+        )
     }
 }
