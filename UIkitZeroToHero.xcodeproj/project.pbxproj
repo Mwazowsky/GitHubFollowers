@@ -55,54 +55,16 @@
 		D3C60D562D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Data/PersistentStorage/CoreDataStorage/CoreDataStorage.swift,
-				Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/CoreDataUsersQueriesStorage.swift,
-				"Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/EntityMapping/UserQueryEntity+Mapping.swift",
-				Data/PersistentStorage/UsersQueriesStorage/UsersQueriesStorage.swift,
-				Domain/UseCases/FetchRecentUserQueriesUseCase.swift,
-				Domain/UseCases/Protocol/UseCase.swift,
-				Modules/FavoriteList/Models/Favorite.swift,
-				Modules/FollowerList/FollowerListVC.swift,
-				Presentation/UserScene/UsersList/View/UsersListTableView/Cell/UsersListItemCell.swift,
-				Presentation/UserScene/UsersList/View/UsersListTableView/UsersListTableViewController.swift,
-				Presentation/UserScene/UsersList/View/UsersListView.swift,
-				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
-				Presentation/UserScene/UsersQueriesList/View/SwiftUI/UserQueryListView.swift,
-				Presentation/UserScene/UsersQueriesList/View/UIKit/UsersQueriesTableViewController.swift,
-				Presentation/UserScene/UsersQueriesList/ViewModel/UsersQueryListItemViewModel.swift,
-				"Presentation/Utils/Extensions/UIImageView/UIImageView+ImageSizeAfterAspectFit.swift",
-				"Presentation/Utils/Extensions/UIViewController/UIViewController+ActivityIndicator.swift",
-				Presentation/Utils/Protocols/StoryboardInstantiable.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
-				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 			);
 			target = D3C60CFD2D4E6F8700DD3C93 /* UIkitZeroToHeroTests */;
 		};
 		D3C60D572D50F31000DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHeroUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Data/PersistentStorage/CoreDataStorage/CoreDataStorage.swift,
-				Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/CoreDataUsersQueriesStorage.swift,
-				"Data/PersistentStorage/UsersQueriesStorage/CoreDataStorage/EntityMapping/UserQueryEntity+Mapping.swift",
-				Data/PersistentStorage/UsersQueriesStorage/UsersQueriesStorage.swift,
-				Domain/UseCases/FetchRecentUserQueriesUseCase.swift,
-				Domain/UseCases/Protocol/UseCase.swift,
-				Modules/FavoriteList/Models/Favorite.swift,
-				Modules/FollowerList/FollowerListVC.swift,
-				Presentation/UserScene/UsersList/View/UsersListTableView/Cell/UsersListItemCell.swift,
-				Presentation/UserScene/UsersList/View/UsersListTableView/UsersListTableViewController.swift,
-				Presentation/UserScene/UsersList/View/UsersListView.swift,
-				Presentation/UserScene/UsersList/View/UsersListViewController.swift,
-				Presentation/UserScene/UsersQueriesList/View/SwiftUI/UserQueryListView.swift,
-				Presentation/UserScene/UsersQueriesList/View/UIKit/UsersQueriesTableViewController.swift,
-				Presentation/UserScene/UsersQueriesList/ViewModel/UsersQueryListItemViewModel.swift,
-				"Presentation/Utils/Extensions/UIImageView/UIImageView+ImageSizeAfterAspectFit.swift",
-				"Presentation/Utils/Extensions/UIViewController/UIViewController+ActivityIndicator.swift",
-				Presentation/Utils/Protocols/StoryboardInstantiable.swift,
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
-				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 			);
 			target = D3C60D072D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */;
 		};
