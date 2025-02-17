@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		155E6B24756DD84F6D1B6C31 /* Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B779F8C326C26D43AD299D2 /* Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework */; };
+		74BDB715E3825A2F66D06B8E /* Pods_UIkitZeroToHeroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C7689B1B88699EEAB1F49 /* Pods_UIkitZeroToHeroTests.framework */; };
+		885F383F517BCE45782F5D0E /* Pods_UIkitZeroToHero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58E776D86EA7D09BA3F5547 /* Pods_UIkitZeroToHero.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D3C60CFF2D4E6F8700DD3C93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D6867814DC51EDB0B9AF53D /* Pods-UIkitZeroToHeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHeroTests.debug.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHeroTests/Pods-UIkitZeroToHeroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B779F8C326C26D43AD299D2 /* Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E64D1D604A9C3BD70C6859 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61EE70B677FD5651DDB9CF82 /* Pods-UIkitZeroToHeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHeroTests.release.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHeroTests/Pods-UIkitZeroToHeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		835C7689B1B88699EEAB1F49 /* Pods_UIkitZeroToHeroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIkitZeroToHeroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968F4254E2C95AF878F57BB5 /* Pods-UIkitZeroToHero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHero.release.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero.release.xcconfig"; sourceTree = "<group>"; };
+		A3228D3544D16B7DEA307385 /* Pods-UIkitZeroToHero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHero.debug.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero.debug.xcconfig"; sourceTree = "<group>"; };
+		A58E776D86EA7D09BA3F5547 /* Pods_UIkitZeroToHero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIkitZeroToHero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6458B0EA6B066DF6CC2AA93 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.release.xcconfig"; path = "Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D3C60CE52D4E6F8500DD3C93 /* UIkitZeroToHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIkitZeroToHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C60CFE2D4E6F8700DD3C93 /* UIkitZeroToHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkitZeroToHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C60D082D4E6F8700DD3C93 /* UIkitZeroToHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkitZeroToHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +60,6 @@
 				Controllers/FollowerListVC.swift,
 				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
-				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
@@ -61,7 +75,6 @@
 				Controllers/FollowerListVC.swift,
 				"Extensions/String/String+Extension.swift",
 				UIComponents/Atoms/ZTHButtons/ZTHFollowerButton.swift,
-				UIComponents/Atoms/ZTHText/ZTHValidationText.swift,
 				UIComponents/Atoms/ZTHTextFields/ZTHBaseTextField.swift,
 				UIComponents/Molecules/ZTHTableCells/ZTHFavoritesTableViewCell.swift,
 				Utils/Constants.swift,
@@ -99,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885F383F517BCE45782F5D0E /* Pods_UIkitZeroToHero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BDB715E3825A2F66D06B8E /* Pods_UIkitZeroToHeroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +128,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155E6B24756DD84F6D1B6C31 /* Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B3CBD06E785F6F1AE89F47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3228D3544D16B7DEA307385 /* Pods-UIkitZeroToHero.debug.xcconfig */,
+				968F4254E2C95AF878F57BB5 /* Pods-UIkitZeroToHero.release.xcconfig */,
+				55E64D1D604A9C3BD70C6859 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.debug.xcconfig */,
+				C6458B0EA6B066DF6CC2AA93 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.release.xcconfig */,
+				0D6867814DC51EDB0B9AF53D /* Pods-UIkitZeroToHeroTests.debug.xcconfig */,
+				61EE70B677FD5651DDB9CF82 /* Pods-UIkitZeroToHeroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7549289CEDDE999AA740C154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A58E776D86EA7D09BA3F5547 /* Pods_UIkitZeroToHero.framework */,
+				3B779F8C326C26D43AD299D2 /* Pods_UIkitZeroToHero_UIkitZeroToHeroUITests.framework */,
+				835C7689B1B88699EEAB1F49 /* Pods_UIkitZeroToHeroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3C60CDC2D4E6F8500DD3C93 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +165,8 @@
 				D3C60D012D4E6F8700DD3C93 /* UIkitZeroToHeroTests */,
 				D3C60D0B2D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */,
 				D3C60CE62D4E6F8500DD3C93 /* Products */,
+				44B3CBD06E785F6F1AE89F47 /* Pods */,
+				7549289CEDDE999AA740C154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3C60D112D4E6F8700DD3C93 /* Build configuration list for PBXNativeTarget "UIkitZeroToHero" */;
 			buildPhases = (
+				448DE8422ED62010EC7D56F6 /* [CP] Check Pods Manifest.lock */,
 				D3C60CE12D4E6F8500DD3C93 /* Sources */,
 				D3C60CE22D4E6F8500DD3C93 /* Frameworks */,
 				D3C60CE32D4E6F8500DD3C93 /* Resources */,
+				4111E65C6071FD9173D28633 /* [CP] Embed Pods Frameworks */,
+				7AF323CBA5EADF03558CC170 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,8 +202,6 @@
 				D3C60CE72D4E6F8500DD3C93 /* UIkitZeroToHero */,
 			);
 			name = UIkitZeroToHero;
-			packageProductDependencies = (
-			);
 			productName = UIkitZeroToHero;
 			productReference = D3C60CE52D4E6F8500DD3C93 /* UIkitZeroToHero.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3C60D162D4E6F8700DD3C93 /* Build configuration list for PBXNativeTarget "UIkitZeroToHeroTests" */;
 			buildPhases = (
+				763FDBDC57F4582D03B3902A /* [CP] Check Pods Manifest.lock */,
 				D3C60CFA2D4E6F8700DD3C93 /* Sources */,
 				D3C60CFB2D4E6F8700DD3C93 /* Frameworks */,
 				D3C60CFC2D4E6F8700DD3C93 /* Resources */,
@@ -181,8 +224,6 @@
 				D3C60D012D4E6F8700DD3C93 /* UIkitZeroToHeroTests */,
 			);
 			name = UIkitZeroToHeroTests;
-			packageProductDependencies = (
-			);
 			productName = UIkitZeroToHeroTests;
 			productReference = D3C60CFE2D4E6F8700DD3C93 /* UIkitZeroToHeroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -191,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3C60D192D4E6F8700DD3C93 /* Build configuration list for PBXNativeTarget "UIkitZeroToHeroUITests" */;
 			buildPhases = (
+				68E7AEDED7C353940D0DF653 /* [CP] Check Pods Manifest.lock */,
 				D3C60D042D4E6F8700DD3C93 /* Sources */,
 				D3C60D052D4E6F8700DD3C93 /* Frameworks */,
 				D3C60D062D4E6F8700DD3C93 /* Resources */,
+				D8B68FC2214908C379C8A518 /* [CP] Embed Pods Frameworks */,
+				28B607F8DB037B47443D406F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,8 +248,6 @@
 				D3C60D0B2D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */,
 			);
 			name = UIkitZeroToHeroUITests;
-			packageProductDependencies = (
-			);
 			productName = UIkitZeroToHeroUITests;
 			productReference = D3C60D082D4E6F8700DD3C93 /* UIkitZeroToHeroUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -278,6 +320,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28B607F8DB037B47443D406F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4111E65C6071FD9173D28633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		448DE8422ED62010EC7D56F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIkitZeroToHero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E7AEDED7C353940D0DF653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763FDBDC57F4582D03B3902A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIkitZeroToHeroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF323CBA5EADF03558CC170 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero/Pods-UIkitZeroToHero-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B68FC2214908C379C8A518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests/Pods-UIkitZeroToHero-UIkitZeroToHeroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3C60CE12D4E6F8500DD3C93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,13 +497,15 @@
 /* Begin XCBuildConfiguration section */
 		D3C60D122D4E6F8700DD3C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3228D3544D16B7DEA307385 /* Pods-UIkitZeroToHero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = W6988R58JS;
+				DEVELOPMENT_TEAM = 397FG78S7G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -352,13 +533,15 @@
 		};
 		D3C60D132D4E6F8700DD3C93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968F4254E2C95AF878F57BB5 /* Pods-UIkitZeroToHero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = W6988R58JS;
+				DEVELOPMENT_TEAM = 397FG78S7G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -436,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -493,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -505,6 +688,7 @@
 		};
 		D3C60D172D4E6F8700DD3C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6867814DC51EDB0B9AF53D /* Pods-UIkitZeroToHeroTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +708,7 @@
 		};
 		D3C60D182D4E6F8700DD3C93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61EE70B677FD5651DDB9CF82 /* Pods-UIkitZeroToHeroTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +728,7 @@
 		};
 		D3C60D1A2D4E6F8700DD3C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E64D1D604A9C3BD70C6859 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
@@ -560,6 +746,7 @@
 		};
 		D3C60D1B2D4E6F8700DD3C93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6458B0EA6B066DF6CC2AA93 /* Pods-UIkitZeroToHero-UIkitZeroToHeroUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
