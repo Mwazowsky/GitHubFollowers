@@ -8,10 +8,8 @@
 import UIKit
 
 class ZTHFollowerButton: UIButton {
-
-    // Custom initializer
+    
     init(backgroundColor: UIColor, title: String) {
-        // Use .zero for frame if you'll be using Auto Layout
         super.init(frame: .zero)
         
         // Set properties before calling configure, if needed
