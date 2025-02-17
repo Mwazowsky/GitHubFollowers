@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SearchVC: UIViewController {
     let logoImageView: UIImageView = UIImageView()
     
@@ -144,6 +145,7 @@ class SearchVC: UIViewController {
     }
 }
 
+@available(iOS 13.0, *)
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         pushFollowerListVC()
