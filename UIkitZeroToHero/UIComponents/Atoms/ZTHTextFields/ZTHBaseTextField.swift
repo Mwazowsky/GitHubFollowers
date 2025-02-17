@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class ZTHBaseTextField: UITextField {
 
     override init(frame: CGRect) {
@@ -21,6 +22,7 @@ class ZTHBaseTextField: UITextField {
     }
     
     
+    @available(iOS 13.0, *)
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         

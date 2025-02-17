@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
@@ -52,13 +53,13 @@ class TabBarVC: UITabBarController {
             appearance.configureWithTransparentBackground()
             appearance.backgroundEffect = UIBlurEffect(style: .systemChromeMaterial)
             appearance.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.2)
-            
             UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
+        } else if #available(iOS 13.0, *) {
+            UITabBar.appearance().backgroundColor = UIColor.systemBackground.withAlphaComponent(0.2)
         } else {
             UITabBar.appearance().backgroundImage = UIImage()
             UITabBar.appearance().shadowImage = UIImage()
-            UITabBar.appearance().backgroundColor = UIColor.systemBackground.withAlphaComponent(0.2)
         }
         
         UITabBar.appearance().tintColor = .systemGreen
@@ -71,4 +72,5 @@ class TabBarVC: UITabBarController {
         
         return tabBarController
     }
+
 }
