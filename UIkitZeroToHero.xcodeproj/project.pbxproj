@@ -6,6 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		646CB9702D9133F90009E8F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB93E2D9133F90009E8F2 /* AppDelegate.swift */; };
+		646CB9712D9133F90009E8F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB93F2D9133F90009E8F2 /* SceneDelegate.swift */; };
+		646CB9722D9133F90009E8F2 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9412D9133F90009E8F2 /* FavoritesListVC.swift */; };
+		646CB9732D9133F90009E8F2 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9422D9133F90009E8F2 /* FollowerListVC.swift */; };
+		646CB9742D9133F90009E8F2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9432D9133F90009E8F2 /* SearchVC.swift */; };
+		646CB9752D9133F90009E8F2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9452D9133F90009E8F2 /* String+Extension.swift */; };
+		646CB9762D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 646CB95B2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodeld */; };
+		646CB9772D9133F90009E8F2 /* ZTHFollowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB95D2D9133F90009E8F2 /* ZTHFollowerButton.swift */; };
+		646CB9782D9133F90009E8F2 /* ZTHValidationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9602D9133F90009E8F2 /* ZTHValidationText.swift */; };
+		646CB9792D9133F90009E8F2 /* ZTHBaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9622D9133F90009E8F2 /* ZTHBaseTextField.swift */; };
+		646CB97A2D9133F90009E8F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9672D9133F90009E8F2 /* Constants.swift */; };
+		646CB97B2D9133F90009E8F2 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB9682D9133F90009E8F2 /* Regex.swift */; };
+		646CB97C2D9133F90009E8F2 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB96A2D9133F90009E8F2 /* TabBarVC.swift */; };
+		646CB97D2D9133F90009E8F2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CB96B2D9133F90009E8F2 /* TabBarView.swift */; };
+		646CB97E2D9133F90009E8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646CB9582D9133F90009E8F2 /* Assets.xcassets */; };
+		646CB97F2D9133F90009E8F2 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 646CB9592D9133F90009E8F2 /* ExportOptions.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D3C60CFF2D4E6F8700DD3C93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,30 +43,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		646CB93E2D9133F90009E8F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		646CB93F2D9133F90009E8F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		646CB9412D9133F90009E8F2 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		646CB9422D9133F90009E8F2 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		646CB9432D9133F90009E8F2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		646CB9452D9133F90009E8F2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		646CB9582D9133F90009E8F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		646CB9592D9133F90009E8F2 /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
+		646CB95A2D9133F90009E8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646CB95D2D9133F90009E8F2 /* ZTHFollowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTHFollowerButton.swift; sourceTree = "<group>"; };
+		646CB9602D9133F90009E8F2 /* ZTHValidationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTHValidationText.swift; sourceTree = "<group>"; };
+		646CB9622D9133F90009E8F2 /* ZTHBaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTHBaseTextField.swift; sourceTree = "<group>"; };
+		646CB9672D9133F90009E8F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		646CB9682D9133F90009E8F2 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		646CB96A2D9133F90009E8F2 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		646CB96B2D9133F90009E8F2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		646CB96F2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UIkitZeroToHero.xcdatamodel; sourceTree = "<group>"; };
 		D3C60CE52D4E6F8500DD3C93 /* UIkitZeroToHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIkitZeroToHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C60CFE2D4E6F8700DD3C93 /* UIkitZeroToHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkitZeroToHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C60D082D4E6F8700DD3C93 /* UIkitZeroToHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIkitZeroToHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D3C60D102D4E6F8700DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHero" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/Info.plist,
-			);
-			target = D3C60CE42D4E6F8500DD3C93 /* UIkitZeroToHero */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D3C60CE72D4E6F8500DD3C93 /* UIkitZeroToHero */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D3C60D102D4E6F8700DD3C93 /* Exceptions for "UIkitZeroToHero" folder in "UIkitZeroToHero" target */,
-			);
-			path = UIkitZeroToHero;
-			sourceTree = "<group>";
-		};
 		D3C60D012D4E6F8700DD3C93 /* UIkitZeroToHeroTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UIkitZeroToHeroTests;
@@ -85,10 +103,282 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646CB9402D9133F90009E8F2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				646CB93E2D9133F90009E8F2 /* AppDelegate.swift */,
+				646CB93F2D9133F90009E8F2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		646CB9442D9133F90009E8F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9412D9133F90009E8F2 /* FavoritesListVC.swift */,
+				646CB9422D9133F90009E8F2 /* FollowerListVC.swift */,
+				646CB9432D9133F90009E8F2 /* SearchVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		646CB9462D9133F90009E8F2 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9452D9133F90009E8F2 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		646CB9472D9133F90009E8F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9462D9133F90009E8F2 /* String */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		646CB9482D9133F90009E8F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		646CB9492D9133F90009E8F2 /* FollowerList */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9482D9133F90009E8F2 /* Models */,
+			);
+			path = FollowerList;
+			sourceTree = "<group>";
+		};
+		646CB94A2D9133F90009E8F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		646CB94B2D9133F90009E8F2 /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				646CB94A2D9133F90009E8F2 /* Models */,
+			);
+			path = SearchUser;
+			sourceTree = "<group>";
+		};
+		646CB94C2D9133F90009E8F2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9492D9133F90009E8F2 /* FollowerList */,
+				646CB94B2D9133F90009E8F2 /* SearchUser */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		646CB94D2D9133F90009E8F2 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		646CB94E2D9133F90009E8F2 /* FavoriteDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoriteDetails;
+			sourceTree = "<group>";
+		};
+		646CB94F2D9133F90009E8F2 /* FavoritesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoritesList;
+			sourceTree = "<group>";
+		};
+		646CB9502D9133F90009E8F2 /* FavoritesQueriesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoritesQueriesList;
+			sourceTree = "<group>";
+		};
+		646CB9512D9133F90009E8F2 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		646CB9522D9133F90009E8F2 /* FavoriteScene */ = {
+			isa = PBXGroup;
+			children = (
+				646CB94D2D9133F90009E8F2 /* Behaviors */,
+				646CB94E2D9133F90009E8F2 /* FavoriteDetails */,
+				646CB94F2D9133F90009E8F2 /* FavoritesList */,
+				646CB9502D9133F90009E8F2 /* FavoritesQueriesList */,
+				646CB9512D9133F90009E8F2 /* Flows */,
+			);
+			path = FavoriteScene;
+			sourceTree = "<group>";
+		};
+		646CB9532D9133F90009E8F2 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		646CB9542D9133F90009E8F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		646CB9552D9133F90009E8F2 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9542D9133F90009E8F2 /* View */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		646CB9562D9133F90009E8F2 /* UserScene */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9532D9133F90009E8F2 /* Behaviors */,
+				646CB9552D9133F90009E8F2 /* UserDetails */,
+			);
+			path = UserScene;
+			sourceTree = "<group>";
+		};
+		646CB9572D9133F90009E8F2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9522D9133F90009E8F2 /* FavoriteScene */,
+				646CB9562D9133F90009E8F2 /* UserScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		646CB95C2D9133F90009E8F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9582D9133F90009E8F2 /* Assets.xcassets */,
+				646CB9592D9133F90009E8F2 /* ExportOptions.plist */,
+				646CB95A2D9133F90009E8F2 /* Info.plist */,
+				646CB95B2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		646CB95E2D9133F90009E8F2 /* ZTHButtons */ = {
+			isa = PBXGroup;
+			children = (
+				646CB95D2D9133F90009E8F2 /* ZTHFollowerButton.swift */,
+			);
+			path = ZTHButtons;
+			sourceTree = "<group>";
+		};
+		646CB95F2D9133F90009E8F2 /* ZTHCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZTHCells;
+			sourceTree = "<group>";
+		};
+		646CB9612D9133F90009E8F2 /* ZTHText */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9602D9133F90009E8F2 /* ZTHValidationText.swift */,
+			);
+			path = ZTHText;
+			sourceTree = "<group>";
+		};
+		646CB9632D9133F90009E8F2 /* ZTHTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9622D9133F90009E8F2 /* ZTHBaseTextField.swift */,
+			);
+			path = ZTHTextFields;
+			sourceTree = "<group>";
+		};
+		646CB9642D9133F90009E8F2 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				646CB95E2D9133F90009E8F2 /* ZTHButtons */,
+				646CB95F2D9133F90009E8F2 /* ZTHCells */,
+				646CB9612D9133F90009E8F2 /* ZTHText */,
+				646CB9632D9133F90009E8F2 /* ZTHTextFields */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		646CB9652D9133F90009E8F2 /* Organism */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Organism;
+			sourceTree = "<group>";
+		};
+		646CB9662D9133F90009E8F2 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9642D9133F90009E8F2 /* Atoms */,
+				646CB9652D9133F90009E8F2 /* Organism */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		646CB9692D9133F90009E8F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9672D9133F90009E8F2 /* Constants.swift */,
+				646CB9682D9133F90009E8F2 /* Regex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		646CB96C2D9133F90009E8F2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				646CB96A2D9133F90009E8F2 /* TabBarVC.swift */,
+				646CB96B2D9133F90009E8F2 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		646CB96D2D9133F90009E8F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				646CB96C2D9133F90009E8F2 /* TabBar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		646CB96E2D9133F90009E8F2 /* UIkitZeroToHero */ = {
+			isa = PBXGroup;
+			children = (
+				646CB9402D9133F90009E8F2 /* App */,
+				646CB9442D9133F90009E8F2 /* Controllers */,
+				646CB9472D9133F90009E8F2 /* Extensions */,
+				646CB94C2D9133F90009E8F2 /* Modules */,
+				646CB9572D9133F90009E8F2 /* Presentation */,
+				646CB95C2D9133F90009E8F2 /* Resources */,
+				646CB9662D9133F90009E8F2 /* UIComponents */,
+				646CB9692D9133F90009E8F2 /* Utils */,
+				646CB96D2D9133F90009E8F2 /* Views */,
+			);
+			path = UIkitZeroToHero;
+			sourceTree = "<group>";
+		};
 		D3C60CDC2D4E6F8500DD3C93 = {
 			isa = PBXGroup;
 			children = (
-				D3C60CE72D4E6F8500DD3C93 /* UIkitZeroToHero */,
+				646CB96E2D9133F90009E8F2 /* UIkitZeroToHero */,
 				D3C60D012D4E6F8700DD3C93 /* UIkitZeroToHeroTests */,
 				D3C60D0B2D4E6F8700DD3C93 /* UIkitZeroToHeroUITests */,
 				D3C60CE62D4E6F8500DD3C93 /* Products */,
@@ -119,9 +409,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D3C60CE72D4E6F8500DD3C93 /* UIkitZeroToHero */,
 			);
 			name = UIkitZeroToHero;
 			packageProductDependencies = (
@@ -225,6 +512,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646CB97E2D9133F90009E8F2 /* Assets.xcassets in Resources */,
+				646CB97F2D9133F90009E8F2 /* ExportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +538,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646CB9702D9133F90009E8F2 /* AppDelegate.swift in Sources */,
+				646CB9712D9133F90009E8F2 /* SceneDelegate.swift in Sources */,
+				646CB9722D9133F90009E8F2 /* FavoritesListVC.swift in Sources */,
+				646CB9732D9133F90009E8F2 /* FollowerListVC.swift in Sources */,
+				646CB9742D9133F90009E8F2 /* SearchVC.swift in Sources */,
+				646CB9752D9133F90009E8F2 /* String+Extension.swift in Sources */,
+				646CB9762D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodeld in Sources */,
+				646CB9772D9133F90009E8F2 /* ZTHFollowerButton.swift in Sources */,
+				646CB9782D9133F90009E8F2 /* ZTHValidationText.swift in Sources */,
+				646CB9792D9133F90009E8F2 /* ZTHBaseTextField.swift in Sources */,
+				646CB97A2D9133F90009E8F2 /* Constants.swift in Sources */,
+				646CB97B2D9133F90009E8F2 /* Regex.swift in Sources */,
+				646CB97C2D9133F90009E8F2 /* TabBarVC.swift in Sources */,
+				646CB97D2D9133F90009E8F2 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +593,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = 6QY7EY8GGN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -303,7 +606,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = calterras.com.UIkitZeroToHero;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwaremediainnovation.UIkitZeroToHero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -324,7 +627,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = 397FG78S7G;
+				DEVELOPMENT_TEAM = 6QY7EY8GGN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIkitZeroToHero/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -337,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = calterras.com.UIkitZeroToHero;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwaremediainnovation.UIkitZeroToHero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -581,6 +884,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		646CB95B2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				646CB96F2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodel */,
+			);
+			currentVersion = 646CB96F2D9133F90009E8F2 /* UIkitZeroToHero.xcdatamodel */;
+			path = UIkitZeroToHero.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3C60CDD2D4E6F8500DD3C93 /* Project object */;
 }

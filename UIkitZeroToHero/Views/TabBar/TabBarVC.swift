@@ -55,8 +55,6 @@ class TabBarVC: UITabBarController {
             appearance.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.2)
             UITabBar.appearance().standardAppearance = appearance
             UITabBar.appearance().scrollEdgeAppearance = appearance
-        } else if #available(iOS 13.0, *) {
-            UITabBar.appearance().backgroundColor = UIColor.systemBackground.withAlphaComponent(0.2)
         } else {
             UITabBar.appearance().backgroundImage = UIImage()
             UITabBar.appearance().shadowImage = UIImage()
