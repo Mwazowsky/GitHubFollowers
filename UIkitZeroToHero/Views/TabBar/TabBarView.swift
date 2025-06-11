@@ -11,5 +11,4 @@ class TabBarView: UITabBar {
     override var safeAreaInsets: UIEdgeInsets {
         .zero
     }
-
 }
